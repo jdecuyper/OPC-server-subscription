@@ -11,8 +11,8 @@ namespace OPC_server_subscription
     {
         static void Main(string[] args)
         {
-            OPCServer server = new OPCServer("Prediktor.ApisOPCServer.OLGAOnline-RTM");
-            server.AddSubscription("Group1", new string[] { "PMS.Signal1" }.ToList(), OPCSubscription_DataChanged);
+            OPCServer server = new OPCServer("OPCServer.1");
+            server.AddSubscription("Group1", new string[] { "Signal1" }.ToList(), OPCSubscription_DataChanged);
             
             Console.ReadLine();
         }
